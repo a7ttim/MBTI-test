@@ -1,0 +1,30 @@
+@media (min-width: 576px){
+    .bd-pageheader {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+}
+
+.bd-pageheader {
+    padding: 2rem 15px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.wrap{
+    min-height: 100vh;
+}
+
+.card-block{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
