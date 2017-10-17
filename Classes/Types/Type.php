@@ -13,11 +13,11 @@ use Classes\Preferences\Preference;
 
 final class Type
 {
-    public $name;
-    public $title;
-    public $description;
-    public $rarity;
-    public $functions;
+    private $name;
+    private $title;
+    private $description;
+    private $rarity;
+    private $functions;
 
     public function __construct($arr)
     {

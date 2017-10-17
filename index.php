@@ -78,7 +78,7 @@ spl_autoload_register();
                 <div class="row justify-content-center">
                     <div class="col-md-8 text-center">
                         <?
-                        require_once("modules/types.php");
+                        require_once("modules/test.php");
                         ?>
                         <?/*=round($type->getPercentage() * 100, 2)."%";*/?>
                     </div>
