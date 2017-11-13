@@ -54,7 +54,7 @@ spl_autoload_register();
             <p>
                 Предлагаем пройти наш тест из 20 вопросов на определение одного из 16 типов
             </p>
-            <button class="btn btn-outline-info cursor-pointer">
+            <button class="btn btn-lg btn-outline-info cursor-pointer">
                 Пройти тест
             </button>
         </div>

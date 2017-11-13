@@ -11,15 +11,29 @@ namespace Classes\Test;
 
 class Question
 {
+    private $name;
     private $description;
+    private $reverse;
 
-    public function __construct($description)
+    public function __construct($name, $description, $reverse = false)
     {
+        $this->name = $name;
         $this->description = $description;
+        $this->reverse = $reverse;
     }
 
     public function getDescription()
     {
         return $this->description;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function getReverse()
+    {
+        return $this->reverse;
     }
 }

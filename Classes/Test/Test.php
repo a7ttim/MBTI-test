@@ -20,9 +20,13 @@ class Test
 
     public function getTest($number){
         ?>
-        <ul class="list-group">
-            <?$this->sets[$number]->getQuestions()?>
-        </ul>
+        <form method="get">
+            <ul class="list-group">
+                <?$this->sets[$number]->getQuestions()?>
+            </ul>
+            <br>
+            <input class="btn btn-lg btn-primary cursor-pointer" type="submit" name="next">
+        </form>
         <?
     }
 }
