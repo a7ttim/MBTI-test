@@ -18,13 +18,22 @@ class Test
         array_push($this->sets, $set);
     }
 
-    public function getTest($number){
+    public function getResult(){
+        
+    }
+
+    public function getTest(){
         ?>
         <form method="get">
-            <ul class="list-group">
-                <?$this->sets[$number]->getQuestions()?>
-            </ul>
-            <br>
+            <? for ($i = 0; $i < count($this->sets); $i++){
+                ?>
+                <ul class="list-group">
+                    <?$this->sets[$i]->getQuestions()?>
+                </ul>
+                <br>
+                <?
+            }
+            ?>
             <input class="btn btn-lg btn-primary cursor-pointer" type="submit" name="next">
         </form>
         <?

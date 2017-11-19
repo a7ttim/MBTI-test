@@ -22,6 +22,7 @@ class Set
     }
 
     public function getQuestions(){
+        shuffle($this->questions);
         foreach ($this->questions as $question){
             ?>
             <li class="list-group-item">
@@ -35,7 +36,7 @@ class Set
                     <label class="btn btn-outline-danger cursor-pointer">
                         <input type="radio" name="<?= $question->getName() ?>" id="<?= $question->getName() ?>_2" value="<?= $question->getReverse() ? '+' : '-' ?>1" autocomplete="off">-1
                     </label>
-                    <label class="btn btn-outline-secondary cursor-pointer">
+                    <label class="btn btn-outline-primary cursor-pointer">
                         <input type="radio" name="<?= $question->getName() ?>" id="<?= $question->getName() ?>_3" value="0" autocomplete="off" checked>0
                     </label>
                     <label class="btn btn-outline-info cursor-pointer">
