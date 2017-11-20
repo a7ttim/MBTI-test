@@ -60,7 +60,7 @@ spl_autoload_register();
         </div>
 
         <div class="card">
-            <div class="card-body">
+            <div class="card-body"><!--
                 <ul class="nav nav-pills">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Описание</a>
@@ -73,7 +73,7 @@ spl_autoload_register();
                     </li>
                 </ul>
 
-                <hr>
+                <hr>-->
 
                 <div class="row justify-content-center">
                     <div class="col-md-8 text-center">

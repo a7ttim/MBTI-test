@@ -34,7 +34,7 @@ class Test
                 <?
             }
             ?>
-            <input class="btn btn-lg btn-primary cursor-pointer" type="submit" name="submit" value="результат">
+            <input class="btn btn-lg btn-primary cursor-pointer" type="submit" name="submit" value="Результат">
         </form>
         <?
     }

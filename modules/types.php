@@ -190,6 +190,3 @@ $types = [
         'rarity' => 0.02,
         ]),
 ];
-$type = $types[$type];
-$type->setFunctions($functions);
-$type->getDescription();

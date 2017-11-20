@@ -39,28 +39,35 @@ $set->addQuestion(new Question('jp_5', 'Вас часто обвиняют в н
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $test->addSet($set);
 if ($_GET['submit']){
+    require_once('types.php');
     $extraversion = 0;
     for ($i = 1; $i < 6; $i++){
         $extraversion += $_GET['ei_'.$i];
     }
     $intuition = 0;
     for ($i = 1; $i < 6; $i++){
-        $extraversion += $_GET['ns_'.$i];
+        $intuition += $_GET['ns_'.$i];
     }
     $thinking = 0;
     for ($i = 1; $i < 6; $i++){
-        $extraversion += $_GET['tf_'.$i];
+        $thinking += $_GET['tf_'.$i];
     }
     $judging = 0;
     for ($i = 1; $i < 6; $i++){
-        $extraversion += $_GET['jp_'.$i];
+        $judging += $_GET['jp_'.$i];
     }
     $functions = ($extraversion > 0) ? new Extraversion() : new Introversion();
     $functions = ($intuition > 0) ? new Intuition($functions) : new Sensing($functions);
     $functions = ($thinking > 0) ? new Thinking($functions) : new Feeling($functions);
     $functions = ($judging) ? new Judging($functions) : new Perceiving($functions);
-    $type = $functions->getType();
-    require_once('types.php');
+    $type = $types[$functions->getType()];
+    $type->setFunctions($functions);
+    $type->getDescription();
+    ?>
+    <button class="btn btn-lg btn-primary cursor-pointer" onclick='location.href="index.php";'>
+        Заново
+    </button>
+    <?
 }
 else
 $test->getTest();
