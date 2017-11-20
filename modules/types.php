@@ -190,10 +190,6 @@ $types = [
         'rarity' => 0.02,
         ]),
 ];
-$functions = ($extraversion > 0) ? new Extraversion() : new Introversion();
-$functions = ($intuition > 0) ? new Intuition($functions) : new Sensing($functions);
-$functions = ($thinking > 0) ? new Thinking($functions) : new Feeling($functions);
-$functions = ($judging) ? new Judging($functions) : new Perceiving($functions);
-$type = $types[$functions->getType()];
+$type = $types[$type];
 $type->setFunctions($functions);
 $type->getDescription();

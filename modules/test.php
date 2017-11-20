@@ -55,6 +55,11 @@ if ($_GET['submit']){
     for ($i = 1; $i < 6; $i++){
         $extraversion += $_GET['jp_'.$i];
     }
+    $functions = ($extraversion > 0) ? new Extraversion() : new Introversion();
+    $functions = ($intuition > 0) ? new Intuition($functions) : new Sensing($functions);
+    $functions = ($thinking > 0) ? new Thinking($functions) : new Feeling($functions);
+    $functions = ($judging) ? new Judging($functions) : new Perceiving($functions);
+    $type = $functions->getType();
     require_once('types.php');
 }
 else
