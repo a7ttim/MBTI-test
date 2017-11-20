@@ -19,7 +19,7 @@ class Test
     }
 
     public function getResult(){
-        
+
     }
 
     public function getTest(){
@@ -34,7 +34,7 @@ class Test
                 <?
             }
             ?>
-            <input class="btn btn-lg btn-primary cursor-pointer" type="submit" name="next">
+            <input class="btn btn-lg btn-primary cursor-pointer" type="submit" name="submit" value="результат">
         </form>
         <?
     }

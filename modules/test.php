@@ -38,5 +38,24 @@ $set->addQuestion(new Question('jp_4', 'Вы скорее любознатель
 $set->addQuestion(new Question('jp_5', 'Вас часто обвиняют в нерешительности', true));
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $test->addSet($set);
-
+if ($_GET['submit']){
+    $extraversion = 0;
+    for ($i = 1; $i < 6; $i++){
+        $extraversion += $_GET['ei_'.$i];
+    }
+    $intuition = 0;
+    for ($i = 1; $i < 6; $i++){
+        $extraversion += $_GET['ns_'.$i];
+    }
+    $thinking = 0;
+    for ($i = 1; $i < 6; $i++){
+        $extraversion += $_GET['tf_'.$i];
+    }
+    $judging = 0;
+    for ($i = 1; $i < 6; $i++){
+        $extraversion += $_GET['jp_'.$i];
+    }
+    require_once('types.php');
+}
+else
 $test->getTest();

@@ -54,7 +54,7 @@ spl_autoload_register();
             <p>
                 Предлагаем пройти наш тест из 20 вопросов на определение одного из 16 типов
             </p>
-            <button class="btn btn-lg btn-outline-info cursor-pointer">
+            <button class="btn btn-lg btn-outline-info cursor-pointer" onclick='location.href="index.php";'>
                 Пройти тест
             </button>
         </div>
@@ -63,10 +63,10 @@ spl_autoload_register();
             <div class="card-body">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Описание</a>
+                        <a class="nav-link" href="#">Описание</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Тест</a>
+                        <a class="nav-link active" href="#">Тест</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Типы</a>
