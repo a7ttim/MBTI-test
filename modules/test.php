@@ -65,7 +65,7 @@ if ($_GET['submit']){
     $type->getDescription();
     ?>
     <button class="btn btn-lg btn-primary cursor-pointer" onclick='location.href="index.php";'>
-        Заново
+        Ещё раз
     </button>
     <?
 }
