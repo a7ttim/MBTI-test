@@ -4,6 +4,7 @@
  * User: A7ttim
  * Date: 17.10.2017
  * Time: 17:14
+ * @author A7ttim
  */
 
 use Classes\Preferences\{Extraversion, Introversion, Intuition, Sensing, Thinking, Feeling, Perceiving, Judging};

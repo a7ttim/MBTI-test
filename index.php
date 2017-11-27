@@ -4,6 +4,7 @@
  * User: A7ttim
  * Date: 04.10.2017
  * Time: 11:37
+ * @author A7ttim
  */
 
 spl_autoload_extensions(".php");

@@ -34,6 +34,7 @@ class Question
 
     public function getReverse()
     {
+        /* @return $this->reverse */
         return $this->reverse;
     }
 }
